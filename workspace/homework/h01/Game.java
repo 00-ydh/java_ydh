@@ -1,5 +1,7 @@
 package homework.h01;
 
+
+
 import java.util.Scanner;
 
 public class Game {
@@ -34,25 +36,10 @@ public class Game {
                     System.out.println("적의 남은 체력은 " + enemyHp + "입니다.");
                 }
                 case 2 -> {
-
-                    int escapeChance = (int)(Math.random() * 2);
-
-
-                    if (escapeChance == 1) {
-
-                        System.out.println("도망에 성공했습니다. 새로운 적이 나타납니다.");
-                        damage = 0;
-                        enemyHp = (int)(Math.random() * 90) + 10;
-                        System.out.println("안전하게 도망쳤습니다.");
-                    } else {
-
-                        System.out.println("도망에 실패했습니다. 적이 뒤에서 기습합니다.");
-                        damage = (int)(Math.random() * 8) + 3;
-                        hp -= damage;
-                        System.out.println("적의 기습으로 " + damage + "의 체력이 소비되었다.");
-                    }
-
-                    // 남은 체력 공통 출력
+                    damage = (int)(Math.random() * 3);
+                    hp -= damage;
+                    enemyHp = (int)(Math.random() * 90) + 10; // 10 ~ 99
+                    System.out.println("도망간다. 대신 " + damage + "의 체력이 소비되었다.");
                     System.out.println("남은 체력은 " + hp + "입니다.");
                 }
                 case 3 -> {
