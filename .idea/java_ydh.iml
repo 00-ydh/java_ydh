@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/workspace/01_basic" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/workspace/03_database" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/workspace/practice" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/workspace/programmers" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="mariadb-java-client-3.5.9" level="project" />
+    <orderEntry type="library" name="HikariCP-7.1.0" level="project" />
+  </component>
+</module>
